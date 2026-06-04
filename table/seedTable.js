@@ -6,6 +6,8 @@ async function seedTable() {
   
   try {
     await db.exec('BEGIN TRANSACTION')
+    await db.exec('DELETE FROM heroes')
+    await db.exec("DELETE FROM sqlite_sequence WHERE name='heroes'")
 
     for (const {name, attackPower, defensePower, maxHp, imageUrl} of heroes) {
       await db.run(`

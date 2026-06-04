@@ -1,5 +1,5 @@
 /**
- * Dungeon Dice Duel - Hero data
+ * Pokemon Dice Duel - Hero data
  *
  * This file defines the heroes for the dice-based battle idea (and shared card data
  * for other game modes that use the same roster).
@@ -20,110 +20,182 @@
 export const heroes = [
   {
     id: 1,
-    name: "Knight of Ashfang",
-    attackPower: 10,
-    defensePower: 6,
-    maxHp: 18,
-    imageUrl:
-      "https://images.unsplash.com/photo-1577493340887-b7bfff550145?auto=format&fit=crop&crop=top&w=500&h=400&q=80"
-  },
-  {
-    id: 2,
-    name: "Mireclaw Raider",
-    attackPower: 9,
-    defensePower: 4,
-    maxHp: 14,
-    imageUrl:
-      "https://images.unsplash.com/photo-1643345633742-7af1bd1226af?auto=format&fit=crop&w=500&q=80"
-  },
-  {
-    id: 3,
-    name: "Voltjaw Rogue",
-    attackPower: 8,
-    defensePower: 6,
-    maxHp: 12,
-    imageUrl:
-      "https://images.unsplash.com/photo-1561084746-f360502e5abe?auto=format&fit=crop&w=500&q=80"
-  },
-  {
-    id: 4,
-    name: "Grimscale Guardian",
-    attackPower: 7,
-    defensePower: 8,
-    maxHp: 20,
-    imageUrl:
-      "https://images.unsplash.com/photo-1770610973306-a09b57e6dc52?auto=format&fit=crop&w=500&q=80"
-  },
-  {
-    id: 5,
-    name: "Briarhorn Druid",
+    name: "Bulbasaur",
     attackPower: 7,
     defensePower: 7,
     maxHp: 16,
     imageUrl:
-      "https://images.unsplash.com/photo-1542605731-cf0169ad50e3?auto=format&fit=crop&w=500&q=80"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/1.png"
+  },
+  {
+    id: 2,
+    name: "Ivysaur",
+    attackPower: 8,
+    defensePower: 8,
+    maxHp: 18,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/2.png"
+  },
+  {
+    id: 3,
+    name: "Venusaur",
+    attackPower: 10,
+    defensePower: 9,
+    maxHp: 22,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/3.png"
+  },
+  {
+    id: 4,
+    name: "Charmander",
+    attackPower: 8,
+    defensePower: 5,
+    maxHp: 14,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/4.png"
+  },
+  {
+    id: 5,
+    name: "Charmeleon",
+    attackPower: 9,
+    defensePower: 6,
+    maxHp: 16,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/5.png"
   },
   {
     id: 6,
-    name: "Frostmane Warlock",
-    attackPower: 8,
-    defensePower: 5,
-    maxHp: 15,
+    name: "Charizard",
+    attackPower: 12,
+    defensePower: 8,
+    maxHp: 20,
     imageUrl:
-      "https://images.unsplash.com/photo-1725158214576-a908b2a0346a?auto=format&fit=crop&w=500&q=80"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/6.png"
   },
   {
     id: 7,
-    name: "Emberfang Berserker",
+    name: "Squirtle",
+    attackPower: 6,
+    defensePower: 8,
+    maxHp: 15,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/7.png"
+  },
+  {
+    id: 8,
+    name: "Wartortle",
+    attackPower: 7,
+    defensePower: 9,
+    maxHp: 17,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/8.png"
+  },
+  {
+    id: 9,
+    name: "Blastoise",
+    attackPower: 9,
+    defensePower: 11,
+    maxHp: 21,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/9.png"
+  },
+  {
+    id: 10,
+    name: "Pikachu",
+    attackPower: 9,
+    defensePower: 5,
+    maxHp: 13,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/25.png"
+  },
+  {
+    id: 11,
+    name: "Raichu",
+    attackPower: 11,
+    defensePower: 7,
+    maxHp: 17,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/26.png"
+  },
+  {
+    id: 12,
+    name: "Eevee",
+    attackPower: 6,
+    defensePower: 6,
+    maxHp: 14,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/133.png"
+  },
+  {
+    id: 13,
+    name: "Vaporeon",
+    attackPower: 8,
+    defensePower: 8,
+    maxHp: 22,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/134.png"
+  },
+  {
+    id: 14,
+    name: "Jolteon",
+    attackPower: 10,
+    defensePower: 6,
+    maxHp: 16,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/135.png"
+  },
+  {
+    id: 15,
+    name: "Flareon",
     attackPower: 11,
     defensePower: 5,
     maxHp: 16,
     imageUrl:
-      "https://plus.unsplash.com/premium_photo-1667608386999-bc20b98ef329?auto=format&fit=crop&w=500&q=80"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/136.png"
   },
   {
-    id: 8,
-    name: "Tidecaller Mystic",
-    attackPower: 6,
-    defensePower: 9,
-    maxHp: 17,
-    imageUrl:
-      "https://images.unsplash.com/photo-1696825612755-7ba581bb4f39?auto=format&fit=crop&w=500&q=80"
-  },
-  {
-    id: 9,
-    name: "Shadowfen Assassin",
-    attackPower: 10,
-    defensePower: 4,
-    maxHp: 13,
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1696528052089-fd6dabc34972?auto=format&fit=crop&w=500&q=80"
-  },
-  {
-    id: 10,
-    name: "Ironbark Sentinel",
-    attackPower: 6,
-    defensePower: 10,
-    maxHp: 22,
-    imageUrl:
-      "https://plus.unsplash.com/premium_photo-1694444269425-897fa3a0e3fa?auto=format&fit=crop&w=500&q=80"
-  },
-  {
-    id: 11,
-    name: "Stormveil Archer",
-    attackPower: 9,
+    id: 16,
+    name: "Mewtwo",
+    attackPower: 13,
     defensePower: 7,
-    maxHp: 14,
+    maxHp: 24,
     imageUrl:
-      "https://images.unsplash.com/photo-1573306533578-12e23afbf2c6?auto=format&fit=crop&w=500&q=80"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/150.png"
   },
   {
-    id: 12,
-    name: "Duskwraith Knight",
-    attackPower: 8,
-    defensePower: 8,
-    maxHp: 18,
+    id: 17,
+    name: "Mew",
+    attackPower: 9,
+    defensePower: 9,
+    maxHp: 19,
     imageUrl:
-      "https://images.unsplash.com/photo-1483879504681-c0196ecceda5?auto=format&fit=crop&w=500&q=80"
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/151.png"
+  },
+  {
+    id: 18,
+    name: "Snorlax",
+    attackPower: 8,
+    defensePower: 7,
+    maxHp: 26,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/143.png"
+  },
+  {
+    id: 19,
+    name: "Gengar",
+    attackPower: 11,
+    defensePower: 6,
+    maxHp: 15,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/94.png"
+  },
+  {
+    id: 20,
+    name: "Dragonite",
+    attackPower: 12,
+    defensePower: 9,
+    maxHp: 23,
+    imageUrl:
+      "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/149.png"
   }
 ];

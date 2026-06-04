@@ -1,7 +1,7 @@
 {
-  "name": "dungeon-dice-game",
+  "name": "Pokemon-dice-game",
   "version": "1.0.0",
-  "description": "dungeon-dice-game",
+  "description": "Pokemon-dice-game",
   "license": "ISC",
   "author": "Masaid Fairus Trimarsongko",
   "type": "module",

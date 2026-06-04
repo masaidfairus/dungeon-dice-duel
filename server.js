@@ -28,4 +28,4 @@ app.use("/api/auth/me", meRouter)
 app.use("/api/auth/stats", statsRouter)
 app.use("/api/auth", authRouter)
 
-app.listen(PORT, () => console.log(`Dungeon Dice Duel App listening on port http://localhost:${PORT}`))
+app.listen(PORT, () => console.log(`Pokemon Dice Duel App listening on port http://localhost:${PORT}`))
