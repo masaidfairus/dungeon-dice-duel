@@ -20,8 +20,8 @@
       </div>
     </header>
 
-    <main class="auth-main">
-      <section class="auth-card" aria-labelledby="signup-title">
+    <main class="main">
+      <section class="card" aria-labelledby="signup-title">
         <h2 id="signup-title">Create your account</h2>
         <form class="auth-form" id="signup-form" autocomplete="off">
           <label for="signup-name">Full name</label>
@@ -34,11 +34,11 @@
             type="text"
             pattern="^[a-zA-Z0-9_-]{1,20}$"
             title="Use 1-20 letters, numbers, underscores, or hyphens."
-            required
-          />
+            required />
 
           <label for="signup-password">Password</label>
-          <input id="signup-password" name="password" type="password" required />
+          <input id="signup-password" name="password" type="password"
+            required />
 
           <button type="submit">Create account</button>
         </form>

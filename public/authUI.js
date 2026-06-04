@@ -22,7 +22,7 @@ export async function checkAuth() {
   
   // ===== Greet user or guest =====
   
-  export function renderGreeting(name) {
+  export function renderGreeting(name) {  
     const user = name ? name : 'Guest'
     document.getElementById('greeting').textContent = `Welcome, ${user}!`
   }
@@ -31,8 +31,9 @@ export async function checkAuth() {
   
   export function showHideMenuItems(name) {
     const isLoggedIn = name
-  document.getElementById('login').style.display = isLoggedIn ? 'none' : 'inline-flex'
-  document.getElementById('signup').style.display = isLoggedIn ? 'none' : 'inline-flex'
-  document.getElementById('logout-btn').style.display = isLoggedIn ? 'inline-flex' : 'none'
+    document.getElementById('login').style.display = isLoggedIn ? 'none' : 'inline-flex'
+    document.getElementById('signup').style.display = isLoggedIn ? 'none' : 'inline-flex'
+    document.getElementById('game-stats').style.display = isLoggedIn ? 'inline-flex' : 'none'
+    document.getElementById('logout-btn').style.display = isLoggedIn ? 'inline-flex' : 'none'
   }
   

@@ -1,7 +1,7 @@
 import { checkAuth, renderGreeting, showHideMenuItems } from './authUI.js';
 import { logout } from './logout.js';
 
-document.getElementById('logout-btn').addEventListener('click', logout) 
+document.getElementById('logout-btn').addEventListener('click', logout)
 
 const primaryActionBtn = document.querySelector('#roll-panel-btn');
 const resetBtn = document.querySelector('#reset-btn');
