@@ -6,7 +6,7 @@ export async function createRun(userId) {
     const run = await db.run('INSERT INTO runs (user_id) VALUES (?)', [userId])
     return run.lastID
   } catch (err) {
-    console.error(err)
+    throw new Error(err)
   }
 }
 
@@ -22,7 +22,7 @@ export async function updateRunStats(runId, outcome) {
       await db.run('UPDATE runs SET total_battles = total_battles + 1 WHERE id = ?', [runId])
     }
   } catch (err) {
-    console.error(err)
+    throw new Error(err)
   }
 }
 

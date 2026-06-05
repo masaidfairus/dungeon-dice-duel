@@ -27,7 +27,7 @@ async function createTable() {
   await db.exec(`
       CREATE TABLE runs (
         id INTEGER PRIMARY KEY AUTOINCREMENT,
-        user_id TEXT NOT NULL,
+        user_id INTEGER NOT NULL,
         total_battles  DEFAULT 0,
         wins  DEFAULT 0,
         losses  DEFAULT 0,

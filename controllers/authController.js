@@ -15,7 +15,7 @@ export async function registerUser(req, res) {
     const db = await getDb()
     const exists = await db.get(`SELECT id FROM users WHERE username = ?`, [username])
     
-    if(exists) {
+    if(!exists) {
       return res.status(400).json({ error: "Username already in use." })
     }
 
@@ -47,6 +47,11 @@ export async function loginUser(req, res) {
     const db = await getDb()
 
     const user = await db.get('SELECT * FROM users WHERE username = ?', [username])
+
+    if (!user) {
+      return res.status(401).json({ error: "Invalid credentials" })
+    }
+
     const isValid = await bcrypt.compare(password, user.password)
 
     if (!isValid) {
